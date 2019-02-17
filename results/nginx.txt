@@ -1,0 +1,18 @@
+-------------------------------------------------------- /hello
+Running 1m test @ http://134.209.0.212:8000/hello
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    81.27ms  194.54ms   2.72s    91.67%
+    Req/Sec     1.34k   264.11     2.80k    67.34%
+  960010 requests in 1.00m, 147.36MB read
+Requests/sec:  15973.72
+Transfer/sec:      2.45MB
+-------------------------------------------------------- /file
+Running 1m test @ http://134.209.0.212:8000/file
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    71.58ms  175.93ms   5.13s    91.85%
+    Req/Sec     1.46k   542.78     5.54k    83.96%
+  1044459 requests in 1.00m, 5.91GB read
+Requests/sec:  17380.04
+Transfer/sec:    100.66MB
