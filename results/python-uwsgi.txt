@@ -1,0 +1,60 @@
+-------------------------------------------------------- /hello
+Running 1m test @ http://134.209.0.212:8000/hello
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   211.02ms  789.36ms   9.74s    94.58%
+    Req/Sec   268.31     67.77   710.00     69.26%
+  192213 requests in 1.00m, 4.40MB read
+  Socket errors: connect 0, read 192254, write 0, timeout 98
+Requests/sec:   3198.35
+Transfer/sec:     74.96KB
+-------------------------------------------------------- /file
+Running 1m test @ http://134.209.0.212:8000/file
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   198.62ms  738.84ms   9.70s    95.20%
+    Req/Sec   213.26     57.30   640.00     68.47%
+  153066 requests in 1.00m, 852.91MB read
+  Socket errors: connect 0, read 153116, write 0, timeout 78
+Requests/sec:   2547.30
+Transfer/sec:     14.19MB
+-------------------------------------------------------- /sleep/10ms
+Running 1m test @ http://134.209.0.212:8000/sleep/10ms
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   535.27ms  695.00ms   7.74s    93.74%
+    Req/Sec    25.90     19.47   191.00     74.91%
+  13250 requests in 1.00m, 271.73KB read
+  Socket errors: connect 0, read 13344, write 0, timeout 57
+Requests/sec:    220.57
+Transfer/sec:      4.52KB
+-------------------------------------------------------- /sleep/100ms
+Running 1m test @ http://134.209.0.212:8000/sleep/100ms
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.58s   311.29ms   3.58s    96.15%
+    Req/Sec    17.77     13.83    40.00     62.07%
+  2392 requests in 1.00m, 49.05KB read
+  Socket errors: connect 0, read 2462, write 0, timeout 0
+Requests/sec:     39.80
+Transfer/sec:     835.80B
+-------------------------------------------------------- /sleep/1s
+Running 1m test @ http://134.209.0.212:8000/sleep/1s
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.51s     2.91s   10.00s    60.00%
+    Req/Sec     2.22      4.32    30.00     97.85%
+  240 requests in 1.00m, 4.92KB read
+  Socket errors: connect 0, read 285, write 0, timeout 200
+Requests/sec:      3.99
+Transfer/sec:      83.87B
+-------------------------------------------------------- /sleep/5s
+Running 1m test @ http://134.209.0.212:8000/sleep/5s
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.01s     4.45ms   5.01s    50.00%
+    Req/Sec     0.00      0.00     0.00    100.00%
+  48 requests in 1.00m, 0.98KB read
+  Socket errors: connect 0, read 88, write 0, timeout 44
+Requests/sec:      0.80
+Transfer/sec:      16.78B
