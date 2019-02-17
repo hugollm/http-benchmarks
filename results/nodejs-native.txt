@@ -1,0 +1,54 @@
+-------------------------------------------------------- /hello
+Running 1m test @ http://134.209.0.212:8000/hello
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    26.32ms   66.81ms   3.22s    98.72%
+    Req/Sec     1.58k   192.23     3.27k    70.03%
+  1135323 requests in 1.00m, 112.60MB read
+Requests/sec:  18891.35
+Transfer/sec:      1.87MB
+-------------------------------------------------------- /file
+Running 1m test @ http://134.209.0.212:8000/file
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    52.68ms   79.26ms   3.49s    98.33%
+    Req/Sec   709.70    101.28     1.40k    72.65%
+  508309 requests in 1.00m, 2.82GB read
+Requests/sec:   8459.55
+Transfer/sec:     47.97MB
+-------------------------------------------------------- /sleep/10ms
+Running 1m test @ http://134.209.0.212:8000/sleep/10ms
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    22.94ms    9.57ms 442.87ms   91.54%
+    Req/Sec     1.47k   156.62     1.98k    71.43%
+  1054301 requests in 1.00m, 101.55MB read
+Requests/sec:  17542.24
+Transfer/sec:      1.69MB
+-------------------------------------------------------- /sleep/100ms
+Running 1m test @ http://134.209.0.212:8000/sleep/100ms
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   101.79ms    2.12ms 309.40ms   91.72%
+    Req/Sec   325.65     12.75   360.00     90.55%
+  233383 requests in 1.00m, 22.48MB read
+Requests/sec:   3886.39
+Transfer/sec:    383.33KB
+-------------------------------------------------------- /sleep/1s
+Running 1m test @ http://134.209.0.212:8000/sleep/1s
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.00s     8.10ms   1.07s    93.01%
+    Req/Sec    39.01     31.49   320.00     91.19%
+  23364 requests in 1.00m, 2.25MB read
+Requests/sec:    388.76
+Transfer/sec:     38.34KB
+-------------------------------------------------------- /sleep/5s
+Running 1m test @ http://134.209.0.212:8000/sleep/5s
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.01s    11.22ms   5.05s    84.89%
+    Req/Sec    33.60     83.32   323.00     90.00%
+  4420 requests in 1.00m, 435.96KB read
+Requests/sec:     73.56
+Transfer/sec:      7.26KB
